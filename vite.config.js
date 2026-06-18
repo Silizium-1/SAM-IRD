@@ -8,4 +8,7 @@ export default defineConfig({
   // vite-plugin-cesium copies Cesium's static assets (Assets, Widgets, Workers,
   // ThirdParty), sets CESIUM_BASE_URL, and injects widgets.css automatically.
   plugins: [cesium()],
+  build: {
+    outDir: 'docs'
+  }
 });
