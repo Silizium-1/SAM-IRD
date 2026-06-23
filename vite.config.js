@@ -4,11 +4,8 @@ import cesium from "vite-plugin-cesium";
 // https://vitejs.dev/config/
 export default defineConfig({
   // Relative asset URLs so dist/ can be served from any subpath.
-  base: '/SAM-IRD/',
+  base: './',
   // vite-plugin-cesium copies Cesium's static assets (Assets, Widgets, Workers,
   // ThirdParty), sets CESIUM_BASE_URL, and injects widgets.css automatically.
   plugins: [cesium()],
-  build: {
-    outDir: 'docs'
-  }
 });
